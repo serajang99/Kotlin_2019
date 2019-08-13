@@ -1,0 +1,22 @@
+package com.example.mimi
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_choice.*
+import org.jetbrains.anko.startActivity
+
+class Auto4Activity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_auto4)
+
+        flex.setOnClickListener{
+            startActivity<Auto5Activity>()
+        }
+
+        NoMoney.setOnClickListener{
+            startActivity<Auto5Activity>()
+        }
+    }
+}
